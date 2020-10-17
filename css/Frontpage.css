@@ -1,0 +1,40 @@
+/*skal vi ha et stylesheet 
+for alt sammen? Eller et hvor hver
+side?*/
+
+.header{
+	text-align: center;
+	padding-top: 5%;
+}
+
+/*Dette er f0r å fjerne bullet
+points, og luften rundt elementene*/
+
+.meny {
+	list-style-type: none; 
+	margin: 0;
+	padding: 0;
+}
+
+
+li a{
+/*	display: inline-block;*/
+	
+	float:left; /*for å få menyen vannrett*/
+	text-align: center; /*for å få menyteksten i midten */
+	width: 25%; /*For at hvert menyelemenmt tar 1/4 av siden*/
+	display: block; /*Hele greia blir clickable, ikke bare teksten*/
+}
+
+/*hover-effekt. Bare placeholder farger :) */
+li a:hover{
+	background-color: pink;
+	color:white;
+}
+
+
+#QR-code{
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
