@@ -38,7 +38,7 @@ li a{
 	text-align: center; /*for å få menyteksten i midten */
 	/*width: 25%; /*For at hvert menyelemenmt tar 1/4 av siden*/
 	width: 25%;
-	height: 5.0vh; /*bruker vh (view height) for at den skal holde seg rett når siden skaleres*/
+	height: 4.0vh; /*bruker vh (view height) for at den skal holde seg rett når siden skaleres*/
 	padding-top: 5%; /*paddingen gjør knappene større enn bare teksten i høyden*/
 	padding-bottom: 5%;
 	margin-bottom: 2.5%; /*margin gir litt luft mellom nav-bar og resten av siden*/
@@ -55,12 +55,6 @@ li a:hover{
 	color:white;
 }
 
-.frontpage-buttons{
-display: inline-block;
- margin: 0 15%;
-  padding: 10px;
-
-}
 
 #QR-code{
 	width: 50%;
@@ -68,8 +62,18 @@ display: inline-block;
 	margin-right: 25%;
 }
 
+.frontpage-buttons{
+	display: inline-block;
+ 	margin: 0 15%;
+ 	padding: 10px;
+}
 
-/**************/
+/** Har ikke fått til at
+knappene under QR-koden alltid ligger
+i midten av bildet*/
+
+/** Må rydde litt opp og sette denne koden
+inn i det over, har limt inn fra det som var i contact.css **/
 
 husk å lag en header (med logo?)
 
