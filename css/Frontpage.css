@@ -1,19 +1,25 @@
 /*skal vi ha et stylesheet 
 for alt sammen? Eller et hvor hver
 side?*/
-
 .header{
 	text-align: center;
 	padding-top: 5%;
 }
 
-/*Dette er f0r å fjerne bullet
-points, og luften rundt elementene*/
+.meny{
+	font-size: 18px;
+}
+
+body{
+	background-color: #c3d9bf;
+}
 
 .meny {
-	list-style-type: none; 
-	margin: 0;
+	list-style-type: none; /*Dette er f0r å fjerne bullet
+points*/
+	margin: 0; /* fjerner luften rundt elementene*/
 	padding: 0;
+	background-color: ##6a8a63; /*setter bakgrunnsfarge på knappene*/
 }
 
 
@@ -23,7 +29,12 @@ li a{
 	float:left; /*for å få menyen vannrett*/
 	text-align: center; /*for å få menyteksten i midten */
 	width: 25%; /*For at hvert menyelemenmt tar 1/4 av siden*/
+	padding-top: 5%; /*paddingen gjør knappene større enn bare teksten i høyden*/
+	padding-bottom: 5%;
+	margin-bottom: 2.5%; /*margin gir litt luft mellom nav-bar og resten av siden*/
 	display: block; /*Hele greia blir clickable, ikke bare teksten*/
+	background-color: #6a8a63;
+	color: white;
 }
 
 /*hover-effekt. Bare placeholder farger :) */
@@ -32,6 +43,12 @@ li a:hover{
 	color:white;
 }
 
+.frontpage-buttons{
+display: inline-block;
+ margin: 0 15%;
+  padding: 10px;
+
+}
 
 #QR-code{
 	width: 50%;
