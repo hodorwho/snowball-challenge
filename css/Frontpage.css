@@ -6,8 +6,9 @@ side?*/
 	padding-top: 5%;
 }
 
-.meny{
-	font-size: 18px;
+
+.meny-knapp{
+	text-decoration: none;
 }
 
 body{
@@ -20,7 +21,14 @@ points*/
 	margin: 0; /* fjerner luften rundt elementene*/
 	padding: 0;
 	background-color: ##6a8a63; /*setter bakgrunnsfarge på knappene*/
+	/*font-size: 18px;*/
+	font-size:calc(10px + 1.5vw); /*hentet fra https://stackoverflow.com/questions/23984629/how-to-set-min-font-size-in-css 
+	for å få en min-size font*/
+	vw
+
+
 }
+
 
 
 li a{
@@ -28,18 +36,22 @@ li a{
 	
 	float:left; /*for å få menyen vannrett*/
 	text-align: center; /*for å få menyteksten i midten */
-	width: 25%; /*For at hvert menyelemenmt tar 1/4 av siden*/
+	/*width: 25%; /*For at hvert menyelemenmt tar 1/4 av siden*/
+	width: 25%;
+	height: 5.0vh; /*bruker vh (view height) for at den skal holde seg rett når siden skaleres*/
 	padding-top: 5%; /*paddingen gjør knappene større enn bare teksten i høyden*/
 	padding-bottom: 5%;
 	margin-bottom: 2.5%; /*margin gir litt luft mellom nav-bar og resten av siden*/
 	display: block; /*Hele greia blir clickable, ikke bare teksten*/
 	background-color: #6a8a63;
 	color: white;
+	text-decoration: none;
+
 }
 
 /*hover-effekt. Bare placeholder farger :) */
 li a:hover{
-	background-color: pink;
+	background-color: #455940;
 	color:white;
 }
 
@@ -54,4 +66,66 @@ display: inline-block;
 	width: 50%;
 	margin-left: 25%;
 	margin-right: 25%;
+}
+
+
+/**************/
+
+husk å lag en header (med logo?)
+
+
+
+body {
+  padding: 20px;
+  background-color:
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+input[type=text], textarea {
+width: 100%;
+padding: ;
+margin: ;
+border: 2px solid black;
+border-radius: 2px;
+}
+
+input[type:Send] {
+  background-color: ;
+  color: ;
+  padding: ;
+  border: ;
+  border-radius: 4px;
+}
+
+input[type:Send]:hover {
+  background-color: ;
+}
+
+.contactForm {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.8;
+}
+
+.fa-facebook {
+  background-color: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background-color: #55ACEE;
+  color: white;
 }
