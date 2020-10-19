@@ -78,6 +78,12 @@ body{
 	float: right;
 }
 
+.tegneserie img{
+	width:70vw;
+	margin-left: 10vw;
+	padding: 2.5vw;
+}
+
 @media screen and (max width: 600px) {
 	.menu a {
 		float: none;
