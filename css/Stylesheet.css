@@ -1,4 +1,4 @@
-/*skal vi ha et stylesheet 
+/*skal vi ha et stylesheet
 for alt sammen? Eller et hvor hver
 side?*/
 
@@ -28,21 +28,32 @@ body{
 	list-style-type: none; /*Dette er f0r å fjerne bullet
 points*/
 	margin: 0; /* fjerner luften rundt elementene*/
-	padding: 0;
+	padding: 20px;
 	background-color: ##6a8a63; /*setter bakgrunnsfarge på knappene*/
 	/*font-size: 18px;*/
-	font-size:calc(10px + 1.5vw); /*hentet fra https://stackoverflow.com/questions/23984629/how-to-set-min-font-size-in-css 
+	font-size:calc(10px + 1.5vw); /*hentet fra https://stackoverflow.com/questions/23984629/how-to-set-min-font-size-in-css
 	for å få en min-size font*/
-	vw
-
-
 }
 
+.meny a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 6px;
+	line-height: 20px;
+}
+
+.meny a.navn {
+	font-size: 20px;
+	font-weight: bolder;
+}
 
 
 li a{
 /*	display: inline-block;*/
-	
+
 	float:left; /*for å få menyen vannrett*/
 	text-align: center; /*for å få menyteksten i midten */
 	/*width: 25%; /*For at hvert menyelemenmt tar 1/4 av siden*/
@@ -64,6 +75,56 @@ li a:hover{
 	color:white;
 }
 
+/* color for when button is pressed*/
+li a.active {
+	background-color: ;
+	color: white;
+}
+
+.menu {
+	background-color: grey;
+	padding: 60px;
+}
+
+.menu a{
+	float: left;
+	text-align: center;
+	font-size: 18px;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 15px;
+	line-height: 20px;
+}
+
+.menu a.navn {
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.menu a:hover {
+	background-color: blue;
+	color: white;
+}
+
+.menu a.active {
+	background-color: magenta;
+	color: white;
+}
+/* for å få menyen til høyre på siden*/
+.header-menu {
+	float: right;
+}
+
+@media screen and (max width 500px) {
+	.header a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.header-menu {
+		float: none;
+	}
+}
 
 #QR-code{
 	width: 50%;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head> 
+<head>
 	<title>FairSeam - together for a better tomorrow</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="../css/Stylesheet.css">
@@ -11,12 +11,28 @@
 
 <body>
 
-<ul class = "meny">
+
+	<!-- flyttet linkene til stylesheets
+		til head fra over head <ul class = "meny">
+	<a href="#default" class="navn">FAIRSEAM</a>
+	<div class="header-meny">
 	<li class="meny-knapp"><a href = frontpage.html> Front page </a> </li>
 	<li class="meny-knapp"><a href = About.html> About the project </a> </li>
 	<li class="meny-knapp"><a href = App.html> Download the app </a> </li>
 	<li class="meny-knapp"><a href = 	Contact.html> Contact us </a></li>
-</ul>  
+	</div>
+</ul>
+-->
+
+<div class="menu">
+		<a class="navn">the FAIRSEAM project</a>
+		<div class="header-menu">
+			<a href="frontpage.html">Front page </a>
+			<a href="About.html">About FAIRSEAM </a>
+			<a href="App.html">Download the app </a>
+			<a href="Contact.html">Contact us </a>
+		</div>
+</div>
 
 
 <div class="header">
@@ -24,14 +40,14 @@
 	<h2>together for a better tomorrow</h2>
 </div>
 
-<!-- vi må huske å legge til 
+<!-- vi må huske å legge til
 bildetekst i hht undiversal design-->
 
 <picture>
 	<img id="QR-code" src="../images/placeholderQR.png" alt="placeholder QR-code" width="50%" padding="25%">
 </picture>
 
-<div class="frontpage-buttons"> 
+<div class="frontpage-buttons">
 	<button class="button" id="button-one" onclick="window.location.href='About.html';"> Learn more about the project!
 	</button>
 	<button class="button" id="button-two" onclick="window.location.href='App.html';"> Download the FairSeam app
