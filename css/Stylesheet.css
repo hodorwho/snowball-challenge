@@ -26,8 +26,9 @@ body{
 	padding: 0px; /*for å fjerne whitespace*/
   	background-color:
  	font-family: Arial, Helvetica, sans-serif;
+ 	height: 100vh;
+ 	margin: 0;
 }
-
 
 .meny {
 	list-style-type: none; /*Dette er f0r å fjerne bullet
@@ -38,19 +39,8 @@ points*/
 	/*font-size: 18px;*/
 	font-size:calc(10px + 1.5vw); /*hentet fra https://stackoverflow.com/questions/23984629/how-to-set-min-font-size-in-css
 	for å få en min-size font*/
+
 }
-
- {.meny a
-	float: left;
-	color: white;
-	text-align: center;
-	padding: 10px;
-	font-size: 20px;
-	border-radius: 6px;
-	line-height: 20px;
-}
-
-
 
 li a{
 /*	display: inline-block;*/
@@ -58,7 +48,8 @@ li a{
 	float:left; /*for å få menyen vannrett*/
 	text-align: center; /*for å få menyteksten i midten */
 	/*width: 25%; /*For at hvert menyelemenmt tar 1/4 av siden*/
-	width: 25%;
+	width: 25vw;
+	max-width: 25%; /*prevent horizontal overflow*/
 	height: 4.0vh; /*bruker vh (view height) for at den skal holde seg rett når siden skaleres*/
 	padding-top: 5%; /*paddingen gjør knappene større enn bare teksten i høyden*/
 	padding-bottom: 5%;
@@ -76,7 +67,6 @@ li a:hover{
 	color:white;
 }
 
-
 #QR-code{
 	width: 50%;
 	margin-left: 25%;
@@ -89,6 +79,31 @@ li a:hover{
  	padding: 10px;
 }*/
 
+
+/** Har ikke fått til at
+knappene under QR-koden alltid ligger
+i midten av bildet*/
+
+
+input[type=text], textarea {
+width: 40%;
+padding: 4px;
+margin: 4px;
+border: 2px solid black;
+border-radius: 2px;
+}
+
+input[type:Send] {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border: 4px;
+  border-radius: 4px;
+}
+
+input[type:Send]:hover {
+  background-color: grey;
+}
 
 .contactForm {
 	background-color: white;
@@ -137,29 +152,4 @@ footer .contact{
 .fa-twitter {
   background-color: #55ACEE;
   color: white;
-}
-
-
-/** Har ikke fått til at
-knappene under QR-koden alltid ligger
-i midten av bildet*/
-
-input[type=text], textarea {
-width: 100%;
-padding: ;
-margin: ;
-border: 2px solid black;
-border-radius: 2px;
-}
-
-input[type:Send] {
-  background-color: ;
-  color: ;
-  padding: ;
-  border: ;
-  border-radius: 4px;
-}
-
-input[type:Send]:hover {
-  background-color: ;
 }
