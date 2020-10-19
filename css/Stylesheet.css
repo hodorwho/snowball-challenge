@@ -27,7 +27,7 @@ body{
   	background-color:
  	font-family: Arial, Helvetica, sans-serif;
  	height: 100vh;
- 	margin: 0;
+ 	margin: 0 0 100px; /* bottom = footer height*/
 }
 
 .meny {
@@ -177,10 +177,9 @@ footer{
 	display: block; /*vi vil ha en kloss*/
 	overflow: hidden; /*fordi vi skal ha noen floating elements*/
 	background-color: #6a8a63;
-	margin-top: 5%; /*for å få litt luft over */
+	margin-top: 100px; /*for å få litt luft over */
 	padding: 2% 0;
 	box-sizing: border-box;
-
 }
 
 footer .contact{
