@@ -3,6 +3,11 @@ for alt sammen? Eller et hvor hver
 side?*/
 
 
+html{
+	position: relative;
+	min-height: 100%;
+}
+
 .header{
 	text-align: center;
 	padding-top: 5%;
@@ -35,7 +40,6 @@ points*/
 	for å få en min-size font*/
 }
 
-<<<<<<< HEAD
  {.meny a
 	float: left;
 	color: white;
@@ -44,8 +48,6 @@ points*/
 	font-size: 20px;
 	border-radius: 6px;
 	line-height: 20px;
-=======
->>>>>>> parent of 19da31e... Merge pull request #1 from hodorwho/alt-menu
 }
 
 
@@ -81,18 +83,39 @@ li a:hover{
 	margin-right: 25%;
 }
 
-.frontpage-buttons{
+/*.frontpage-buttons{
 	display: inline-block;
  	margin: 0 15%;
  	padding: 10px;
-}
+}*/
 
 
 .contactForm {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
+	background-color: white;
+	padding: 20px;
+	margin-left: 5%;
+	margin-right: 15%;
+	width: 80%;
+	border-radius: 8px;
+	margin-bottom: 200px;
 }
+
+footer{
+	width: 100vw; /*to fill the screen*/
+	max-width: 100%; /* prevents horizontal overflow*/
+	display: block; /*vi vil ha en kloss*/
+	overflow: hidden; /*fordi vi skal ha noen floating elements*/
+	background-color: #6a8a63;
+	margin-top: 5%; /*for å få litt luft over */
+	padding: 2% 0;
+	box-sizing: border-box;
+
+}
+
+footer .contact{
+	float: right;
+}
+
 
 .fa {
   padding: 20px;
