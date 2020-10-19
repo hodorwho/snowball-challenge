@@ -1,4 +1,4 @@
-/*skal vi ha et stylesheet 
+/*skal vi ha et stylesheet
 for alt sammen? Eller et hvor hver
 side?*/
 
@@ -23,7 +23,7 @@ body{
  	font-family: Arial, Helvetica, sans-serif;
  	height: 100vh;
  	margin: 0;
-}	
+}
 
 
 .meny {
@@ -33,7 +33,7 @@ points*/
 	padding: 0;
 	background-color: ##6a8a63; /*setter bakgrunnsfarge på knappene*/
 	/*font-size: 18px;*/
-	font-size:calc(10px + 1.5vw); /*hentet fra https://stackoverflow.com/questions/23984629/how-to-set-min-font-size-in-css 
+	font-size:calc(10px + 1.5vw); /*hentet fra https://stackoverflow.com/questions/23984629/how-to-set-min-font-size-in-css
 	for å få en min-size font*/
 
 }
@@ -42,7 +42,7 @@ points*/
 
 li a{
 /*	display: inline-block;*/
-	
+
 	float:left; /*for å få menyen vannrett*/
 	text-align: center; /*for å få menyteksten i midten */
 	/*width: 25%; /*For at hvert menyelemenmt tar 1/4 av siden*/
@@ -79,11 +79,54 @@ li a:hover{
 }
 
 
+/** Har ikke fått til at
+knappene under QR-koden alltid ligger
+i midten av bildet*/
+
+
+input[type=text], textarea {
+width: 40%;
+padding: 4px;
+margin: 4px;
+border: 2px solid black;
+border-radius: 2px;
+}
+
+input[type:Send] {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border: 4px;
+  border-radius: 4px;
+}
+
+input[type:Send]:hover {
+  background-color: grey;
+}
+
 .contactForm {
   background-color: white;
   padding: 20px;
+	margin-left: 400px;
+	float: left;
+	width: 40%;
   border-radius: 8px;
+	margin-bottom: 200px;
 
+}
+
+footer{
+	width: 100vw; /*to fill the screen*/
+	max-width: 100%; /* prevents horizontal overflow*/
+	display: block; /*vi vil ha en kloss*/
+	overflow: hidden; /*fordi vi skal ha noen floating elements*/
+	background-color: #6a8a63;
+	margin-top: 5%; /*for å få litt luft over */
+	padding-bottom: 2%;
+}
+
+footer .contact{
+	float: right;
 }
 
 .fa {
@@ -106,43 +149,4 @@ li a:hover{
 .fa-twitter {
   background-color: #55ACEE;
   color: white;
-}
-
-
-/** Har ikke fått til at
-knappene under QR-koden alltid ligger
-i midten av bildet*/
-
-input[type=text], textarea {
-width: 100%;
-padding: ;
-margin: ;
-border: 2px solid black;
-border-radius: 2px;
-}
-
-input[type:Send] {
-  background-color:;
-  color: ;
-  padding: ;
-  border: ;
-  border-radius: 4px;
-}
-
-input[type:Send]:hover {
-  background-color: ;
-}
-
-footer{
-	width: 100vw; /*to fill the screen*/
-	max-width: 100%; /* prevents horizontal overflow*/
-	display: block; /*vi vil ha en kloss*/
-	overflow: hidden; /*fordi vi skal ha noen floating elements*/
-	background-color: #6a8a63;
-	margin-top: 5%; /*for å få litt luft over */
-	padding-bottom: 2%;
-}
-
-footer .contact{
-	float: right;
 }
