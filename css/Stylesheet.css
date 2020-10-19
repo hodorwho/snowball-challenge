@@ -1,11 +1,16 @@
 /*skal vi ha et stylesheet 
 for alt sammen? Eller et hvor hver
 side?*/
+
+
 .header{
 	text-align: center;
 	padding-top: 5%;
 }
 
+#header h1{
+	margin: 0px;
+}
 
 .meny-knapp{
 	text-decoration: none;
@@ -13,7 +18,11 @@ side?*/
 
 body{
 	background-color: #c3d9bf;
+	padding: 0px; /*for å fjerne whitespace*/
+  	background-color:
+ 	font-family: Arial, Helvetica, sans-serif;
 }
+
 
 .meny {
 	list-style-type: none; /*Dette er f0r å fjerne bullet
@@ -68,43 +77,6 @@ li a:hover{
  	padding: 10px;
 }
 
-/** Har ikke fått til at
-knappene under QR-koden alltid ligger
-i midten av bildet*/
-
-/** Må rydde litt opp og sette denne koden
-inn i det over, har limt inn fra det som var i contact.css **/
-
-husk å lag en header (med logo?)
-
-
-
-body {
-  padding: 20px;
-  background-color:
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-input[type=text], textarea {
-width: 100%;
-padding: ;
-margin: ;
-border: 2px solid black;
-border-radius: 2px;
-}
-
-input[type:Send] {
-  background-color: ;
-  color: ;
-  padding: ;
-  border: ;
-  border-radius: 4px;
-}
-
-input[type:Send]:hover {
-  background-color: ;
-}
 
 .contactForm {
   background-color: white;
@@ -132,4 +104,29 @@ input[type:Send]:hover {
 .fa-twitter {
   background-color: #55ACEE;
   color: white;
+}
+
+
+/** Har ikke fått til at
+knappene under QR-koden alltid ligger
+i midten av bildet*/
+
+input[type=text], textarea {
+width: 100%;
+padding: ;
+margin: ;
+border: 2px solid black;
+border-radius: 2px;
+}
+
+input[type:Send] {
+  background-color: ;
+  color: ;
+  padding: ;
+  border: ;
+  border-radius: 4px;
+}
+
+input[type:Send]:hover {
+  background-color: ;
 }
