@@ -17,56 +17,19 @@ html{
 	margin: 0px;
 }
 
-.meny-knapp{
-	text-decoration: none;
+h1 {
+	padding: 5px;
+	margin-top: -30px;
 }
 
 body{
 	background-color: #c3d9bf;
 	padding: 0px; /*for å fjerne whitespace*/
-  	background-color:
+  background-color: #DCFDFF;
  	font-family: Arial, Helvetica, sans-serif;
  	height: 100vh;
- 	margin: 0 0 100px; /* bottom = footer height*/
+ 	margin: 0 0 0 px; /* bottom = footer height*/
 }
-
-.meny {
-	list-style-type: none; /*Dette er f0r å fjerne bullet
-points*/
-	margin: 0; /* fjerner luften rundt elementene*/
-	padding: 0;
-	background-color: ##6a8a63; /*setter bakgrunnsfarge på knappene*/
-	/*font-size: 18px;*/
-	font-size:calc(10px + 1.5vw); /*hentet fra https://stackoverflow.com/questions/23984629/how-to-set-min-font-size-in-css
-	for å få en min-size font*/
-
-}
-
-li a{
-/*	display: inline-block;*/
-
-	float:left; /*for å få menyen vannrett*/
-	text-align: center; /*for å få menyteksten i midten */
-	/*width: 25%; /*For at hvert menyelemenmt tar 1/4 av siden*/
-	width: 25vw;
-	max-width: 25%; /*prevent horizontal overflow*/
-	height: 4.0vh; /*bruker vh (view height) for at den skal holde seg rett når siden skaleres*/
-	padding-top: 5%; /*paddingen gjør knappene større enn bare teksten i høyden*/
-	padding-bottom: 5%;
-	margin-bottom: 2.5%; /*margin gir litt luft mellom nav-bar og resten av siden*/
-	display: block; /*Hele greia blir clickable, ikke bare teksten*/
-	background-color: #6a8a63;
-	color: white;
-	text-decoration: none;
-
-}
-
-/*hover-effekt. Bare placeholder farger :) */
-li a:hover{
-	background-color: #455940;
-	color:white;
-}
-
 
 {
 	box-sizing: border-box;
@@ -84,11 +47,17 @@ li a:hover{
 	text-align: center;
 	font-size: 18px;
 	text-decoration: none;
-	border-radius: 5px;
+	border-radius: 1px;
 	padding: 8px;
-	padding-top: 30px;
+	padding-top: 10px;
 	line-height: 15px;
+	border-right: 1px solid black;
 }
+
+/* .menu a:first-child {
+	border-right: none;
+}
+*/
 
 .menu a.navn {
 	font-size: 24px;
@@ -100,7 +69,7 @@ li a:hover{
 	color: white;
 }
 
-.menu a.active {
+.menu a:active {
 	background-color: magenta;
 	color: white;
 }
@@ -129,6 +98,26 @@ li a:hover{
 	margin-right: 25%;
 }
 
+#logo {
+	float: center;
+	width: 20%;
+	padding: 5px;
+	padding-bottom: 15px;
+}
+
+#scanMe {
+	height: auto;
+	border-radius: 8px;
+	width: 33%;
+  margin-left: 33%;
+	margin-right: 33%;
+	padding: 0px;
+}
+
+body p {
+
+}
+
 /*.frontpage-buttons{
 	display: inline-block;
  	margin: 0 15%;
@@ -140,8 +129,17 @@ li a:hover{
 knappene under QR-koden alltid ligger
 i midten av bildet*/
 
+.contactForm {
+	background-color: #ffe7ff;
+	padding: 20px;
+	margin-left: 15%;
+	margin-right: 15%;
+	width: 70%;
+	border-radius: 8px;
+	margin-bottom: 200px;
+}
 
-input[type=text], textarea {
+input[type=text] {
 width: 40%;
 padding: 4px;
 margin: 4px;
@@ -149,26 +147,34 @@ border: 2px solid black;
 border-radius: 2px;
 }
 
-input[type:Send] {
+textarea {
+	width: 90%;
+	height: 100px;
+	padding: 4px;
+	margin: 4px;
+	border: 2px solid black;
+	border-radius: 2px;
+	resize: none;
+}
+
+input[type=Send] {
   background-color: white;
   color: black;
   padding: 5px;
-  border: 4px;
+  border-color: black;
   border-radius: 4px;
+	display: inline-block;
+	cursor: pointer;
 }
 
-input[type:Send]:hover {
-  background-color: grey;
+input[type=Send]:hover {
+  border-style: double;
+	border-color: black;
+	text-transform: uppercase;
 }
 
-.contactForm {
-	background-color: white;
-	padding: 20px;
-	margin-left: 5%;
-	margin-right: 15%;
-	width: 80%;
-	border-radius: 8px;
-	margin-bottom: 200px;
+input[type=Send]:active {
+	background-color: #05D7EE;
 }
 
 footer{
@@ -177,18 +183,26 @@ footer{
 	display: block; /*vi vil ha en kloss*/
 	overflow: hidden; /*fordi vi skal ha noen floating elements*/
 	background-color: #6a8a63;
-	margin-top: 100px; /*for å få litt luft over */
+	margin-top: 350px; /*for å få litt luft over */
 	padding: 2% 0;
 	box-sizing: border-box;
 }
 
 footer .contact{
 	float: right;
+	padding-right: 20px;
+}
+
+footer p {
+	text-align: center;
+	padding-bottom: 5px;
+	padding-left: 6px;
+	color: white;
 }
 
 
 .fa {
-  padding: 20px;
+	padding: 20px;
   font-size: 30px;
   width: 30px;
   text-align: center;
