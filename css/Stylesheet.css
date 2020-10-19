@@ -77,6 +77,61 @@ li a:hover{
 }
 
 
+{
+	box-sizing: border-box;
+}
+
+.menu {
+	background-color: #05D7EE;
+	padding: 30px;
+	overflow: hidden;
+}
+
+.menu a{
+	float: left;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 8px;
+	padding-top: 30px;
+	line-height: 15px;
+}
+
+.menu a.navn {
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.menu a:hover {
+	background-color: blue;
+	color: white;
+}
+
+.menu a.active {
+	background-color: magenta;
+	color: white;
+}
+/* for å få menyen til høyre på siden*/
+.header-menu {
+	float: right;
+}
+
+@media screen and (max width: 600px) {
+	.menu a {
+		float: none;
+		width: 100%;
+		display: block;
+		border-style: solid 4px;
+	}
+
+	.header-menu {
+		float: none;
+	}
+}
+
+
 #QR-code{
 	width: 50%;
 	margin-left: 25%;
