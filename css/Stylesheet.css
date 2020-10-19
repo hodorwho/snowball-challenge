@@ -37,7 +37,7 @@ points*/
 	font-size:calc(10px + 1.5vw); /*hentet fra https://stackoverflow.com/questions/23984629/how-to-set-min-font-size-in-css
 	for å få en min-size font*/
 
-.meny a {
+ {.meny a
 	float: left;
 	color: white;
 	text-align: center;
