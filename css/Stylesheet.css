@@ -22,8 +22,6 @@ body{
 	margin: 0px;
   	background-color:
  	font-family: Arial, Helvetica, sans-serif;
- 	height: 100vh;
- 	margin: 0;
 }
 
 
@@ -36,6 +34,7 @@ points*/
 	/*font-size: 18px;*/
 	font-size:calc(10px + 1.5vw); /*hentet fra https://stackoverflow.com/questions/23984629/how-to-set-min-font-size-in-css
 	for å få en min-size font*/
+}
 
  {.meny a
 	float: left;
@@ -59,8 +58,7 @@ li a{
 	float:left; /*for å få menyen vannrett*/
 	text-align: center; /*for å få menyteksten i midten */
 	/*width: 25%; /*For at hvert menyelemenmt tar 1/4 av siden*/
-	width: 25vw;
-	max-width: 25%; /*prevent horizontal overflow*/
+	width: 25%;
 	height: 4.0vh; /*bruker vh (view height) for at den skal holde seg rett når siden skaleres*/
 	padding-top: 5%; /*paddingen gjør knappene større enn bare teksten i høyden*/
 	padding-bottom: 5%;
@@ -151,54 +149,10 @@ li a.active {
 }
 
 
-/** Har ikke fått til at
-knappene under QR-koden alltid ligger
-i midten av bildet*/
-
-
-input[type=text], textarea {
-width: 40%;
-padding: 4px;
-margin: 4px;
-border: 2px solid black;
-border-radius: 2px;
-}
-
-input[type:Send] {
-  background-color: white;
-  color: black;
-  padding: 5px;
-  border: 4px;
-  border-radius: 4px;
-}
-
-input[type:Send]:hover {
-  background-color: grey;
-}
-
 .contactForm {
   background-color: white;
   padding: 20px;
-	margin-left: 400px;
-	float: left;
-	width: 40%;
   border-radius: 8px;
-	margin-bottom: 200px;
-
-}
-
-footer{
-	width: 100vw; /*to fill the screen*/
-	max-width: 100%; /* prevents horizontal overflow*/
-	display: block; /*vi vil ha en kloss*/
-	overflow: hidden; /*fordi vi skal ha noen floating elements*/
-	background-color: #6a8a63;
-	margin-top: 5%; /*for å få litt luft over */
-	padding-bottom: 2%;
-}
-
-footer .contact{
-	float: right;
 }
 
 .fa {
@@ -221,4 +175,29 @@ footer .contact{
 .fa-twitter {
   background-color: #55ACEE;
   color: white;
+}
+
+
+/** Har ikke fått til at
+knappene under QR-koden alltid ligger
+i midten av bildet*/
+
+input[type=text], textarea {
+width: 100%;
+padding: ;
+margin: ;
+border: 2px solid black;
+border-radius: 2px;
+}
+
+input[type:Send] {
+  background-color: ;
+  color: ;
+  padding: ;
+  border: ;
+  border-radius: 4px;
+}
+
+input[type:Send]:hover {
+  background-color: ;
 }
