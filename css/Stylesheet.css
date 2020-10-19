@@ -3,6 +3,11 @@ for alt sammen? Eller et hvor hver
 side?*/
 
 
+html{
+	position: relative;
+	min-height: 100%;
+}
+
 .header{
 	text-align: center;
 	padding-top: 5%;
@@ -72,11 +77,11 @@ li a:hover{
 	margin-right: 25%;
 }
 
-.frontpage-buttons{
+/*.frontpage-buttons{
 	display: inline-block;
  	margin: 0 15%;
  	padding: 10px;
-}
+}*/
 
 
 /** Har ikke fått til at
@@ -105,14 +110,13 @@ input[type:Send]:hover {
 }
 
 .contactForm {
-  background-color: white;
-  padding: 20px;
-	margin-left: 400px;
-	float: left;
-	width: 40%;
-  border-radius: 8px;
+	background-color: white;
+	padding: 20px;
+	margin-left: 5%;
+	margin-right: 15%;
+	width: 80%;
+	border-radius: 8px;
 	margin-bottom: 200px;
-
 }
 
 footer{
@@ -122,12 +126,15 @@ footer{
 	overflow: hidden; /*fordi vi skal ha noen floating elements*/
 	background-color: #6a8a63;
 	margin-top: 5%; /*for å få litt luft over */
-	padding-bottom: 2%;
+	padding: 2% 0;
+	box-sizing: border-box;
+
 }
 
 footer .contact{
 	float: right;
 }
+
 
 .fa {
   padding: 20px;
