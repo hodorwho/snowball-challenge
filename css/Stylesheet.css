@@ -19,6 +19,7 @@ side?*/
 body{
 	background-color: #c3d9bf;
 	padding: 0px; /*for å fjerne whitespace*/
+	margin: 0px;
   	background-color:
  	font-family: Arial, Helvetica, sans-serif;
  	height: 100vh;
@@ -30,14 +31,26 @@ body{
 	list-style-type: none; /*Dette er f0r å fjerne bullet
 points*/
 	margin: 0; /* fjerner luften rundt elementene*/
-	padding: 0;
+	padding: 20px;
 	background-color: ##6a8a63; /*setter bakgrunnsfarge på knappene*/
 	/*font-size: 18px;*/
 	font-size:calc(10px + 1.5vw); /*hentet fra https://stackoverflow.com/questions/23984629/how-to-set-min-font-size-in-css
 	for å få en min-size font*/
 
+.meny a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 6px;
+	line-height: 20px;
 }
 
+.meny a.navn {
+	font-size: 20px;
+	font-weight: bolder;
+}
 
 
 li a{
@@ -65,6 +78,65 @@ li a:hover{
 	color:white;
 }
 
+/* color for when button is pressed*/
+li a.active {
+	background-color: ;
+	color: white;
+}
+
+{
+	box-sizing: border-box;
+}
+
+.menu {
+	background-color: #05D7EE;
+	padding: 30px;
+	overflow: hidden;
+}
+
+.menu a{
+	float: left;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 8px;
+	padding-top: 30px;
+	line-height: 15px;
+}
+
+.menu a.navn {
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.menu a:hover {
+	background-color: blue;
+	color: white;
+}
+
+.menu a.active {
+	background-color: magenta;
+	color: white;
+}
+/* for å få menyen til høyre på siden*/
+.header-menu {
+	float: right;
+}
+
+@media screen and (max width: 600px) {
+	.menu a {
+		float: none;
+		width: 100%;
+		display: block;
+		border-style: solid 4px;
+	}
+
+	.header-menu {
+		float: none;
+	}
+}
 
 #QR-code{
 	width: 50%;
