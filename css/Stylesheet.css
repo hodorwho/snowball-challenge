@@ -102,10 +102,10 @@ body{
 }
 
 .tegneserie img{
-	width:70vw;
-	margin-left: 10vw;
-	padding: 2.5vw;
+	padding: 10% 0;
+	width: 100%;
 }
+
 
 @media screen and (max width: 600px) {
 	.menu a {
@@ -140,12 +140,14 @@ body{
 }
 
 #scanMe {
-	height: auto;
+	/*height: auto;
 	border-radius: 8px;
 	width: 33%;
   margin-left: 33%;
 	margin-right: 33%;
-	padding: 0px;
+	padding: 0px;*/
+	width: 70%;
+	margin-left: 15%;
 }
 
 body p {
