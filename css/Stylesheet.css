@@ -259,3 +259,9 @@ footer p {
   background-color: #55ACEE;
   color: white;
 }
+
+.bruksanvisning {
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
