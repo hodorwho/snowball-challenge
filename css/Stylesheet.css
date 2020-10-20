@@ -140,14 +140,12 @@ body{
 }
 
 #scanMe {
-	/*height: auto;
+	height: auto;
 	border-radius: 8px;
-	width: 33%;
-  margin-left: 33%;
-	margin-right: 33%;
-	padding: 0px;*/
-	width: 70%;
-	margin-left: 15%;
+	width: 50%;
+  margin-left: 25%;
+	margin-right: 25%;
+	padding: 0px;
 }
 
 body p {
@@ -220,6 +218,7 @@ footer{
 	overflow: hidden; /*fordi vi skal ha noen floating elements*/
 	background-color: #05D7EE;
 	background-color: rgba(255,255,255,.5); /*alt farge*/
+	background-color: rgba(255,255,255,.2);
 	margin-top: 350px; /*for å få litt luft over */
 	padding: 2% 0;
 	box-sizing: border-box;
@@ -234,7 +233,8 @@ footer p {
 	text-align: center;
 	padding-bottom: 5px;
 	padding-left: 6px;
-	color: black;
+	color: white;
+	font-size: 17px;
 }
 
 
