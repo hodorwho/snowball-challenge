@@ -188,7 +188,7 @@ footer{
 	max-width: 100%; /* prevents horizontal overflow*/
 	display: block; /*vi vil ha en kloss*/
 	overflow: hidden; /*fordi vi skal ha noen floating elements*/
-	background-color: #6a8a63;
+	background-color: #05D7EE;
 	margin-top: 350px; /*for å få litt luft over */
 	padding: 2% 0;
 	box-sizing: border-box;
@@ -203,7 +203,7 @@ footer p {
 	text-align: center;
 	padding-bottom: 5px;
 	padding-left: 6px;
-	color: white;
+	color: black;
 }
 
 
