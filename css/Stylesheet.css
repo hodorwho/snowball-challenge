@@ -71,12 +71,16 @@ body{
 	padding-top: 10px;
 	line-height: 15px;
 	border-right: 1px solid black;
+	color:white;
 }
 
 /* .menu a:first-child {
 	border-right: none;
 }
 */
+
+
+
 
 .menu a.navn {
 	font-size: 24px;
@@ -118,9 +122,14 @@ body{
 
 
 #LadySewing{
-	width: 50%;
-	margin-left: 25%;
-	margin-right: 25%;
+	width: 100%;
+}
+
+.picture{
+	background-color: rgba(255,255,255,0.2);
+	width: 60%;
+	margin-left: 15%;
+	padding: 5%;
 }
 
 #logo {
