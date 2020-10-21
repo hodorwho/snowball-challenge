@@ -2,6 +2,14 @@
 for alt sammen? Eller et hvor hver
 side?*/
 
+*{
+	text-decoration: none;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
 
 html{
 	position: relative;
@@ -10,25 +18,37 @@ html{
 
 .header{
 	text-align: center;
-	padding-top: 5%;
+	padding-top: 50px;
+	margin: 10px;
+		color: rgba(255,255,255,.9);
 }
 
-#header h1{
+/*#header h1{
 	margin: 0px;
-}
+}*/
 
 h1 {
-	padding: 5px;
+	padding: 0px;
 	margin-top: -30px;
 }
 
+.navn {
+	margin-bottom: 2px;
+} /*luft under tittel i menyen*/
+
+.content{ /*alt farge*/
+	background-color: rgba(255,255,255,.2);
+	padding-bottom: 50px;
+}
+
 body{
-	background-color: #c3d9bf;
-	padding: 0px; /*for å fjerne whitespace*/
-  background-color: #DCFDFF;
- 	font-family: Arial, Helvetica, sans-serif;
- 	height: 100vh;
- 	margin: 0 0 0 px; /* bottom = footer height*/
+	
+padding: 0px; /*for å fjerne whitespace*/
+background-color: #DCFDFF;
+background-color: #2d818a; /* alt farge */
+font-family: Arial, Helvetica, sans-serif;
+height: 100vh;
+margin: 0 0 0 0 px; /* bottom = footer height*/
 }
 
 {
@@ -37,8 +57,11 @@ body{
 
 .menu {
 	background-color: #05D7EE;
+	background-color: #2d818a;
+	background-color: rgba(255,255,255,.2);
 	padding: 30px;
 	overflow: hidden;
+	margin-bottom: 20px;
 }
 
 .menu a{
@@ -52,12 +75,16 @@ body{
 	padding-top: 10px;
 	line-height: 15px;
 	border-right: 1px solid black;
+	color:white;
 }
 
 /* .menu a:first-child {
 	border-right: none;
 }
 */
+
+
+
 
 .menu a.navn {
 	font-size: 24px;
@@ -79,10 +106,10 @@ body{
 }
 
 .tegneserie img{
-	width:70vw;
-	margin-left: 10vw;
-	padding: 2.5vw;
+	padding: 10% 0;
+	width: 100%;
 }
+
 
 @media screen and (max width: 600px) {
 	.menu a {
@@ -99,9 +126,14 @@ body{
 
 
 #LadySewing{
-	width: 50%;
-	margin-left: 25%;
-	margin-right: 25%;
+	width: 100%;
+}
+
+.picture{
+	background-color: rgba(255,255,255,0.2);
+	width: 60%;
+	margin-left: 15%;
+	padding: 5%;
 }
 
 #logo {
@@ -114,9 +146,9 @@ body{
 #scanMe {
 	height: auto;
 	border-radius: 8px;
-	width: 33%;
-  margin-left: 33%;
-	margin-right: 33%;
+	width: 50%;
+  margin-left: 25%;
+	margin-right: 25%;
 	padding: 0px;
 }
 
@@ -189,9 +221,13 @@ footer{
 	display: block; /*vi vil ha en kloss*/
 	overflow: hidden; /*fordi vi skal ha noen floating elements*/
 	background-color: #05D7EE;
-	margin-top: 350px; /*for å få litt luft over */
-	padding: 2% 0;
+	background-color: rgba(255,255,255,.5); /*alt farge*/
+	background-color: rgba(255,255,255,.2);
+	margin-top: 50px; /*for å få litt luft over */
+	padding: 0 0;
 	box-sizing: border-box;
+	padding-top: 15px;
+	padding-bottom: 22px;
 }
 
 footer .contact{
@@ -203,7 +239,8 @@ footer p {
 	text-align: center;
 	padding-bottom: 5px;
 	padding-left: 6px;
-	color: black;
+	color: white;
+	font-size: 17px;
 }
 
 
@@ -227,4 +264,19 @@ footer p {
 .fa-twitter {
   background-color: #55ACEE;
   color: white;
+}
+
+.bruksanvisning {
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+
+#contact{
+	color:white;
+	font-size: 18px;
+}
+
+#byline{
+	float: left;
 }
