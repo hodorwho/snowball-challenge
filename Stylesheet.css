@@ -1,14 +1,6 @@
-/*skal vi ha et stylesheet
-for alt sammen? Eller et hvor hver
-side?*/
 
 *{
 	text-decoration: none;
-}
-
-body{
-	padding: 0;
-	margin: 0;
 }
 
 html{
@@ -23,13 +15,17 @@ html{
 		color: rgba(255,255,255,.9);
 }
 
-/*#header h1{
-	margin: 0px;
-}*/
-
 h1 {
 	padding: 0px;
 	margin-top: -30px;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
 }
 
 .navn {
@@ -42,13 +38,14 @@ h1 {
 }
 
 body{
-
 padding: 0px; /*for å fjerne whitespace*/
 background-color: #DCFDFF;
 background-color: #2d818a; /* alt farge */
 font-family: Arial, Helvetica, sans-serif;
 height: 100vh;
 margin: 0 0 0 0 px; /* bottom = footer height*/
+padding: 0;
+margin: 0;
 }
 
 {
@@ -77,14 +74,6 @@ margin: 0 0 0 0 px; /* bottom = footer height*/
 	border-right: 1px solid black;
 	color:white;
 }
-
-/* .menu a:first-child {
-	border-right: none;
-}
-*/
-
-
-
 
 .menu a.navn {
 	font-size: 24px;
@@ -124,6 +113,32 @@ margin: 0 0 0 0 px; /* bottom = footer height*/
 	}
 }
 
+#headP {
+	width: 50%;
+	margin-left: 25%;
+	background-color: rgba(255,255,255,.2);
+	text-align: center;
+	border:
+	margin-top: 20px;
+}
+
+#headP p {
+	padding: 5px;
+	padding-top: 7px;
+}
+
+#about {
+	width: 40%;
+	margin-left: 30%;
+	background-color: rgba(255,255,255,.2);
+	text-align: center;
+	border: 5px solid black;
+	margin-top: 20px;
+}
+
+#about p {
+	weight: bold;
+}
 
 #LadySewing{
 	width: 100%;
@@ -132,9 +147,10 @@ margin: 0 0 0 0 px; /* bottom = footer height*/
 .picture{
 	background-color: rgba(255,255,255,0.2);
 	width: 60%;
-	margin-left: 15%;
-	padding: 5%;
+	margin-left: 17%;
+	padding: 30px;
 }
+
 
 #logo {
 	float: center;
@@ -144,28 +160,9 @@ margin: 0 0 0 0 px; /* bottom = footer height*/
 }
 
 #scanMe {
-	height: auto;
-	border-radius: 8px;
-	width: 50%;
-  margin-left: 25%;
-	margin-right: 25%;
-	padding: 0px;
+	width: 80%;
+	padding-left: 10%;
 }
-
-body p {
-
-}
-
-/*.frontpage-buttons{
-	display: inline-block;
- 	margin: 0 15%;
- 	padding: 10px;
-}*/
-
-
-/** Har ikke fått til at
-knappene under QR-koden alltid ligger
-i midten av bildet*/
 
 .contactForm {
 	background-color: #ffe7ff;
