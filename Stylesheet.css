@@ -111,6 +111,11 @@ margin: 0;
 	.header-menu {
 		float: none;
 	}
+
+	.contactForm {
+		width: 100%;
+		margin-top: 0;
+	}
 }
 
 #headP {
