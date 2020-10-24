@@ -193,23 +193,23 @@ textarea {
 	resize: none;
 }
 
-input[type=Send] {
+input[type=Button] {
   background-color: white;
   color: black;
-  padding: 5px;
+  padding: 10px;
   border-color: black;
   border-radius: 4px;
 	display: inline-block;
 	cursor: pointer;
 }
 
-input[type=Send]:hover {
+input[type=Button]:hover {
   border-style: double;
 	border-color: black;
 	text-transform: uppercase;
 }
 
-input[type=Send]:active {
+input[type=Button]:active {
 	background-color: #05D7EE;
 }
 
